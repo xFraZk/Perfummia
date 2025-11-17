@@ -296,16 +296,60 @@ footer {
 .fade-in { animation: fadeIn 0.5s forwards; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
+/* --- RESPONSIVE FIX --- */
 @media (max-width: 900px) {
-    nav { position: relative; flex-direction: column; gap: 1rem; padding: 1.5rem; }
-    .nav-links { margin: 0; justify-content: center; display: flex; width: 100%; }
-    .nav-links a { margin: 0 10px; font-size: 0.9rem; }
+    nav { 
+        position: relative; 
+        flex-direction: column; 
+        gap: 1.5rem; 
+        padding: 1.5rem; 
+    }
+    .nav-links { 
+        margin: 0; 
+        justify-content: center; 
+        display: flex; 
+        width: 100%; 
+        align-items: center;
+        flex-wrap: wrap; 
+        gap: 1rem;
+    }
+    .nav-links a { 
+        margin: 0; 
+        font-size: 0.9rem; 
+    }
+    /* Arreglo específico para el botón Dossier en menú */
+    .nav-links .btn {
+        padding: 0.5rem 1.5rem; /* Reducir padding para que no se vea gigante */
+        font-size: 0.85rem;     /* Ajustar fuente */
+        margin-top: 5px;
+    }
 
-    .hero { padding-top: 2rem; text-align: center; justify-content: center; min-height: auto; padding-bottom: 4rem; }
+    .hero { 
+        padding-top: 2rem; 
+        text-align: center; 
+        justify-content: center; 
+        min-height: auto; 
+        padding-bottom: 4rem; 
+    }
     .hero h1 { font-size: 3rem; }
     .hero-content { width: 100%; }
     .hero-background-images { display: none; }
-    .hero-buttons { justify-content: center; }
+    
+    /* Arreglo de botones Hero */
+    .hero-buttons { 
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center;    
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;        
+        max-width: 300px;   
+        padding: 1rem;      
+        text-align: center;
+    }
 
     .bento-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
     .span-2, .span-row-2 { grid-column: span 1; grid-row: span 1; }
