@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfummia | Narrativa Transmedia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PERFUMMIA.</div>
+        <div class="nav-links">
+            <a href="#historia">Historia</a>
+            <a href="#personajes">Personajes</a>
+            <a href="#test">Test</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Narrativa Transmedia</span>
+            <h1>LA ESENCIA <br>DEL <span class="text-gradient">DESTINO</span></h1>
+            <p>Un reino, dos reglas y una traición. Acompaña a Dalia en su viaje para recuperar su tapa y descubrir el misterio que amenaza con corromper Perfummia.</p>
+            
+            <div class="hero-buttons">
+                <a href="#personajes" class="btn btn-primary">Personajes</a>
+                <a href="#test" class="btn btn-outline">Hacer Test</a>
+            </div>
+        </div>
+        
+        <div class="hero-background-images">
+            <img src="https://i.imgur.com/dJDFO9N.png" class="hero-bg-1" alt="Dalia">
+            <img src="https://i.imgur.com/bCu19RB.png" class="hero-bg-2" alt="Killer">
+            <img src="https://i.imgur.com/3o7HamY.png" class="hero-bg-3" alt="Hilario">
+            <img src="https://i.imgur.com/us4NdU2.png" class="hero-bg-4" alt="Kristi">
+        </div>
+    </section>
+
+    <section id="historia" class="section-padding bg-dark">
+        <div class="section-header">
+            <h4 style="color: var(--color-accent);">LA TRAMA</h4>
+            <h2>El Conflicto</h2>
+        </div>
+
+        <div class="bento-grid">
+            <div class="bento-item span-2">
+                <span class="bento-number">01</span>
+                <div>
+                    <h3 class="bento-title">La Regla Rota</h3>
+                    <p class="bento-desc">En el estricto reino de Perfummia, Dalia despierta incompleta. Perder su tapa no es solo un accidente, es una sentencia.</p>
+                </div>
+            </div>
+            <div class="bento-item">
+                <span class="bento-number">02</span>
+                <div>
+                    <h3 class="bento-title">Exilé</h3>
+                    <p class="bento-desc">El sector prohibido. Donde los frascos rotos y las esencias corruptas esperan. Ahí es donde Dalia debe ir.</p>
+                </div>
+            </div>
+            <div class="bento-item span-row-2">
+                <span class="bento-number">03</span>
+                <div style="height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                    <h3 class="bento-title">El Plan Maestro</h3>
+                    <p class="bento-desc">Killer, el exiliado, busca mezclar la pureza de Dalia con la sabiduría de Hilario para crear el "Perfume Supremo".</p>
+                </div>
+            </div>
+            <div class="bento-item">
+                <span class="bento-number">04</span>
+                <div>
+                    <h3 class="bento-title">La Traición</h3>
+                    <p class="bento-desc">Rose parece una aliada, pero sus intenciones son tan oscuras como el fondo del frasco de Killer.</p>
+                </div>
+            </div>
+            <div class="bento-item span-2">
+                <span class="bento-number">05</span>
+                <div>
+                    <h3 class="bento-title">El Desenlace</h3>
+                    <p class="bento-desc">Una batalla en las aguas prohibidas determinará el futuro. ¿Se salvará el reino o será corrompido?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="personajes" class="section-padding">
+        <div class="section-header">
+            <h4 style="color: var(--color-accent);">EL ELENCO</h4>
+            <h2 style="color: var(--color-dark);">Protagonistas</h2>
+        </div>
+
+        <div class="characters-grid">
+            
+            <div class="character-card">
+                <img src="https://i.imgur.com/dJDFO9N.png" alt="Dalia" class="char-img">
+                <div class="char-info">
+                    <span class="char-role">La Elegida</span>
+                    <h3 class="char-name">Dalia</h3>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="https://i.imgur.com/us4NdU2.png" alt="Kristi" class="char-img">
+                <div class="char-info">
+                    <span class="char-role">La Guía</span>
+                    <h3 class="char-name">Kristi</h3>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="https://i.imgur.com/3o7HamY.png" alt="Hilario" class="char-img">
+                <div class="char-info">
+                    <span class="char-role">El Sabio</span>
+                    <h3 class="char-name">Hilario</h3>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="https://i.imgur.com/VkIclH7.png" alt="Rose" class="char-img">
+                <div class="char-info">
+                    <span class="char-role">La Traidora</span>
+                    <h3 class="char-name">Rose</h3>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="https://i.imgur.com/bCu19RB.png" alt="Killer" class="char-img">
+                <div class="char-info">
+                    <span class="char-role">El Villano</span>
+                    <h3 class="char-name">Killer</h3>
+                </div>
+            </div>
+            
+             <div class="character-card" style="background: var(--color-dark); display:flex; justify-content:center; align-items:center; text-align:center; color:white;">
+                <div>
+                    <h3>Próximamente</h3>
+                    <p style="color: rgba(255,255,255,0.5);">Más personajes</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="test" class="section-padding minigame-section">
+        <div id="quiz-wrapper">
+            <div id="start-screen">
+                <h4 style="color: var(--color-accent);" class="uppercase">Interactivo</h4>
+                <h2 style="color: var(--color-dark); font-size: 2.5rem; margin-bottom: 1rem;">¿Cuál es tu Esencia?</h2>
+                <p style="margin-bottom: 2rem;">Descubre qué rol jugarías en el reino de Perfummia respondiendo a situaciones críticas.</p>
+                <button id="start-btn" class="btn btn-primary">Iniciar Test</button>
+            </div>
+
+            <div id="question-screen" class="hidden">
+                <p id="question-progress" style="color: #aaa; font-size: 0.8rem; margin-bottom: 1rem; font-weight: 700;">PREGUNTA 1 / 5</p>
+                <h3 id="question-text" style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--color-dark);">Texto de la pregunta...</h3>
+                <div id="answer-buttons"></div>
+            </div>
+
+            <div id="result-screen" class="hidden">
+                <p style="text-transform: uppercase; font-weight: 700; letter-spacing: 2px; color: #aaa;">Tu resultado</p>
+                <h2 id="result-name" style="font-size: 3.5rem; color: var(--color-dark); margin: 0.5rem 0; line-height: 1;">Personaje</h2>
+                <h4 id="result-subtitle" style="color: var(--color-accent); margin-bottom: 1rem;">Subtitulo</h4>
+                <p id="result-description" style="margin-bottom: 2rem;">Descripción...</p>
+                <button id="share-btn" class="btn btn-primary" style="width: 100%;">Descargar Resultado (PDF)</button>
+                <button onclick="location.reload()" class="btn btn-outline" style="width: 100%; margin-top: 10px;">Reiniciar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-banner">
+        <h2>Sigue la Historia</h2>
+        <p>Pistas ocultas y secretos se revelan diariamente.</p>
+        <a href="https://www.instagram.com/perfummia__" target="_blank" style="background: white; color: var(--color-accent); padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 800;">@PERFUMMIA__</a>
+    </section>
+
+    <footer>
+        <p class="uppercase" style="letter-spacing: 2px; font-weight: 700; color: white;">Perfummia</p>
+        <p>&copy; 2025 Trabajo Práctico Transmedia. Facultad de Artes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
