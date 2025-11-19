@@ -69,13 +69,38 @@
         }
         .btn-outline-nav:hover { background: var(--color-dark); color: white; }
 
-        /* Responsive del Nav */
-        @media (max-width: 900px) {
-            nav { flex-direction: column; gap: 1rem; padding: 1rem; position: relative; background: rgba(255,255,255,0.5); backdrop-filter: blur(10px); }
-            .nav-links { margin: 0; justify-content: center; flex-wrap: wrap; gap: 1rem; width: 100%; }
-            .nav-links a { margin: 0; font-size: 0.9rem; }
-            .btn-outline-nav { margin-left: 0; }
-        }
+
+       /* Responsive del Nav */
+@media (max-width: 900px) {
+    nav { 
+        flex-direction: column; 
+        gap: 1rem; 
+        padding: 1rem; 
+        position: relative; 
+        background: rgba(255,255,255,0.5); 
+        backdrop-filter: blur(10px); 
+    }
+
+    .nav-links { 
+        margin: 0; 
+        justify-content: center; 
+        flex-wrap: wrap; 
+        gap: 1rem; 
+        width: 100%;  
+    }
+
+    .nav-links a { 
+        margin: 0; 
+        font-size: 0.9rem;
+        color: #1A1B2F !important; /* <--- ESTA LÍNEA ES LA SOLUCIÓN (Color oscuro forzado) */
+    }
+
+    .btn-outline-nav { 
+        margin-left: 0;
+        color: #1A1B2F;        /* Asegura que el texto del botón también sea oscuro */
+        border-color: #1A1B2F; /* Asegura que el borde se vea */
+    }
+}
 
         /* =========================================
            2. ESTILOS DEL PLAYER (Podcast)
@@ -614,4 +639,5 @@
         loadTrack(0);
     </script>
 </body>
+
 </html>
